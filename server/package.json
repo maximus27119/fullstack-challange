@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "prisma:client": "prisma generate",
+    "prisma:diff": "prisma migrate dev --create-only --name",
+    "prisma:status": "prisma migrate status",
+    "prisma:apply": "prisma migrate deploy",
+    "prisma:dev:seed": "prisma db seed",
+    "prisma:dev:update": "prisma db push"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "prisma": "^5.21.1"
+  }
+}

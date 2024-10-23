@@ -1,0 +1,13 @@
+.idea
+.DS_Store
+.env
+
+client/node_modules
+client/.next/
+client/out/
+client/build
+client/.DS_Store
+client/.env
+
+server/node_modules
+server/.env
