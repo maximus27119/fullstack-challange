@@ -15,7 +15,9 @@ class OrderController {
         clientId: client.id
       });
 
-      res.status(201).json({ order });
+      const orderResponse = await OrderService.getById(order.id);
+
+      res.status(201).json({ order: orderResponse });
     } catch (error) {
       res.status(500).json({ error });
     }

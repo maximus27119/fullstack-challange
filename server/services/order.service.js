@@ -19,6 +19,15 @@ class OrderService {
       }
     });
   }
+
+  async getById(id) {
+    return prismaClient.order.findUnique({
+      where: { id },
+      include: {
+        client: { select: { id: true, name: true } }
+      }
+    });
+  }
 }
 
 export default new OrderService();
