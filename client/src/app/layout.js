@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={robotoFont.variable}>
+      <body className={robotoFont.variable} style={{background: '#f0f0f0'}}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}
