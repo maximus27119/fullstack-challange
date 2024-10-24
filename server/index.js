@@ -1,11 +1,16 @@
 import express from 'express';
-import dotenv from 'dotenv'
+import cors from 'cors';
+import 'dotenv/config';
 import ordersRoutes from './routes/orders.js';
 
-dotenv.config({ path: '../.env' })
-
-const PORT = process.env.SERVER_PORT || 4000;
+const PORT = process.env.SERVER_PORT || 3999;
 const app = express();
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST'],
+}));
+
 app.use(express.json());
 
 app.use(ordersRoutes);
