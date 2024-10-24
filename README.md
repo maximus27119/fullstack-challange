@@ -13,12 +13,12 @@ Follow the steps below to set up and run the project locally.
 
 To clone the repository use the command:
 ```bash
-git clone https://github.com/maximus27119/fullstack-challange.git
+git clone https://github.com/maximus27119/fullstack-challenge.git
 ```
 
 After cloning, navigate into the project directory:
 ```bash
-cd fullstack-challange
+cd fullstack-challenge
 ```
 
 ### Backend Setup
