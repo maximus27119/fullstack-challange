@@ -7,7 +7,19 @@ Follow the steps below to set up and run the project locally.
 ### Prerequisites
 
 - Ensure you have Docker and Docker Compose installed.
-- Node.js and npm should be installed on your machine.
+- Node.js, npm and git should be installed on your machine.
+
+### Cloning the Repository
+
+To clone the repository use the command:
+```bash
+git clone https://github.com/maximus27119/fullstack-challange.git
+```
+
+After cloning, navigate into the project directory:
+```bash
+cd fullstack-challange
+```
 
 ### Backend Setup
 
