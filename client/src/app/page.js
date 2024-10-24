@@ -34,7 +34,7 @@ export default function Home() {
     <div className={styles.page_wrapper}>
       <div className={styles.page_container}>
         <div className={styles.modal_container}>
-          <BasicModal>
+          <BasicModal buttonText='Add Order'>
             <OrderModalForm onAddOrder={addOrder} />
           </BasicModal>
         </div>

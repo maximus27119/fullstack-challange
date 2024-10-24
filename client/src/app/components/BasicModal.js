@@ -16,14 +16,14 @@ const contentStyle = {
   p: 4,
 };
 
-export default function BasicModal({ children }) {
+export default function BasicModal({ children, buttonText }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const handleOpen = () => setModalOpen(true);
   const handleClose = () => setModalOpen(false);
 
   return (
     <>
-      <Button variant='contained' onClick={handleOpen}>Open modal</Button>
+      <Button variant='contained' onClick={handleOpen}>{ buttonText }</Button>
       <Modal open={isModalOpen} onClose={handleClose}>
         <Box sx={contentStyle}>
         { children }
