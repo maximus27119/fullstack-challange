@@ -62,3 +62,17 @@ Follow the steps below to set up and run the project locally.
 
 ### Usage
 Once both the backend and frontend applications are running, you can access the frontend at http://localhost:3000.
+
+## Architecture Overview
+
+### Backend
+
+The backend is developed using Express.js, with a modular architecture that separates functionality into controllers, services and routes, similar to Nest.js. This design promotes better maintainability and readability. The use of Prisma as the ORM improves database management, offering versatility across various databases, type safety, and an intuitive querying experience. This combination results in a robust and scalable backend that efficiently handles business logic.
+
+### Frontend
+
+On the frontend, we utilized Next.js to make development faster. The framework is highly recommended for use with React due to its built-in features like server-side rendering and static site generation. These capabilities improve application performance and SEO, making development faster and less complex. Material UI was used for its extensive library of customizable components, ensuring a consistent and modern user interface. 
+
+---
+
+Throughout the development process, we implemented Clean Code principles on both the frontend and backend, focusing on readability, maintainability, and modularity to create a high-quality codebase that is easy to navigate and extend.
